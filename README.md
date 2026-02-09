@@ -1,16 +1,78 @@
-# React + Vite
+# React Blog App with Dynamic Routing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React blog application built to practice **React Router DOM** concepts such as dynamic routes, nested routes, URL parameters, and programmatic navigation.
 
-Currently, two official plugins are available:
+This project is focused on understanding how navigation works in React rather than UI styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Home page displaying a list of blog posts
+- Dynamic routing using post ID (`/post/:id`)
+- Blog details page for individual posts
+- Nested routes using `Outlet`
+- Programmatic navigation using `useNavigate`
+- URL parameter handling using `useParams`
+- 404 page for undefined routes
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- React
+- React Router DOM
+- Vite
+- JavaScript (ES6+)
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+├─ components/
+│ ├─ Home.jsx
+│ ├─ PostLayout.jsx
+│ ├─ PostDetails.jsx
+│ ├─ NotFound.jsx
+├─ data.js
+├─ App.jsx
+├─ main.jsx
+```
+## 📖 What I Learned
+
+- How to create dynamic routes in React
+- How to access route parameters using `useParams`
+- How to navigate programmatically using `useNavigate`
+- How nested routing works with `Outlet`
+- How to handle undefined routes using `*` (404 page)
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/react-blog-app-routing.git
+   ```
+
+3. Install dependencies
+```
+npm install
+```
+3. Run the development server
+```
+npm run dev
+```
+
+## 📌 Notes
+This project uses static data instead of an API.
+
+The main goal is to practice React Router DOM, not UI design.
+
+## 👨‍💻 Author
+- Ifra Malik
+- BS Information Technology Student
+- Learning React & Frontend Development
+
